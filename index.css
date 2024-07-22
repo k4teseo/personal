@@ -4,14 +4,20 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 1.5% 10%;
+    position: sticky;
+    top: 0;
 }
 
-p, li, a, button {
+header p, li, a, button {
     font-family: "rafaella", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -56,8 +62,8 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
+    background-color: rgba(255, 255, 255, 1);
+    color: #D2042D;
 }
 
 main {
@@ -133,21 +139,40 @@ main {
 @keyframes textIn {
     0% {
         transform: translateY(100%);
-        color: white;
+        opacity: 0;
     }
     100% {
         transform: translateY(0%);
-        color: #D2042D;
+        opacity: 1;
     }
 }
 
 @keyframes textOut {
     0% {
         transform: translateY(0%);
-        color: #D2042D;
+        opacity: 1;
     }
     100% {
         transform: translateY(-100%);
-        color: white;
+        opacity: 0;
+    }
+}
+
+#about h1{
+    font-size: calc(4px + 4vw);
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
+    animation: slideIn 1s ease;
+    animation-timeline: view();
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
     }
 }
