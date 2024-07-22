@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+p, li, a, button {
+    font-family: "rafaella", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #D2042D;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+button {
+    padding: 5px 25px;
+    background-color: rgba(210, 4, 45, 1);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(210, 4, 45, 0);
+    color: #D2042D;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container .text {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.container .text.first-text {
+    color: black;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.container .text.second-text {
+    color: #D2042D;
+    font-family: "rafaella", sans-serif;
+}
+
+.text.second-text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 2px solid #D2042D;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+    40%, 60% {
+        left: 100%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
