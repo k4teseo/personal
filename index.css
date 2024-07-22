@@ -6,9 +6,9 @@
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 1.5% 10%;
 }
 
 p, li, a, button {
@@ -21,6 +21,8 @@ p, li, a, button {
 
 .logo {
     cursor: pointer;
+    margin-right: auto;
+    font-size: calc(2px + 1vw);
 }
 
 .nav-links {
@@ -29,11 +31,12 @@ p, li, a, button {
 
 .nav-links li {
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 1.3vw;
 }
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
+    font-size: calc(2px + 1vw);
 }
 
 .nav-links li a:hover {
@@ -41,13 +44,15 @@ p, li, a, button {
 }
 
 button {
-    padding: 5px 25px;
+    padding: 4% 20%;
     background-color: rgba(210, 4, 45, 1);
     color: white;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+    margin-left: 1.3vw;
+    font-size: calc(2px + 1vw);
 }
 
 button:hover {
@@ -55,44 +60,94 @@ button:hover {
     color: #D2042D;
 }
 
-body {
-    min-height: 100vh;
-    overflow: hidden;
+main {
+    margin: 0 10vw;
 }
 
-.container .text {
+.container {
+    max-width: 100%;
+    padding-top: 2%;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15% 0;
     position: relative;
-    font-size: 30px;
-    font-weight: 600;
 }
 
-.container .text.first-text {
-    color: black;
-    font-family: "Helvetica Neue", sans-serif;
-}
-
-.container .text.second-text {
-    color: #D2042D;
-    font-family: "rafaella", sans-serif;
-}
-
-.text.second-text:before {
-    content: "";
+#home::before {
+    content: '';
     position: absolute;
-    top: 0;
     left: 0;
-    height: 100%;
+    top: 0;
     width: 100%;
-    background-color: white;
-    border-left: 2px solid #D2042D;
-    animation: animate 4s steps(12) infinite;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    z-index: 1;
 }
-@keyframes animate {
-    40%, 60% {
-        left: 100%;
+
+#home .home-text {
+    color: black;
+    font-size: calc(3px + 3vw);
+    line-height: 40px;
+    font-weight: 200;
+    display: flex;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#home .home-text h1 {
+    font-weight: 400;
+}
+
+#home .home-text h1 span {
+    font-size: calc(4.5px + 5.5vw);
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
+    line-height: 45px;
+    display: none;
+}
+
+.home-text .animate-text {
+    display: inline;
+}
+
+#home .home-text h1 span.text-in {
+    display: block;
+    animation: textIn .5s ease;
+}
+
+#home .home-text h1 span.text-out {
+    animation: textOut .5s ease;
+}
+
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+        color: white;
     }
     100% {
-        left: 0%;
+        transform: translateY(0%);
+        color: #D2042D;
     }
 }
 
+@keyframes textOut {
+    0% {
+        transform: translateY(0%);
+        color: #D2042D;
+    }
+    100% {
+        transform: translateY(-100%);
+        color: white;
+    }
+}
+
+#about {
+    background-color: grey;
+    height: 200vh;
+}

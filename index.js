@@ -1,22 +1,26 @@
-const text = document.querySelector(".second-text");
+const txts=document.querySelector(".animate-text").children;
+txtsLen=txts.length;;
+let index=0;
+const textInTimer=3000;
+const textOutTimer=2600;
+function animateText() {
+    for (let i=0; i<txtsLen; i++) {
+        txts[i].classList.remove("text-in", "text-out");
+    }
+    txts[index].classList.add("text-in");
 
-const textLoad = () => {
-    setTimeout(() => {
-        text.textContent = "Kate Seo";
-    }, 0);
-    setTimeout(() => {
-        text.textContent = "a programmer";
-    }, 4000);
-    setTimeout(() => {
-        text.textContent = "a designer";
-    }, 8000);
-    setTimeout(() => {
-        text.textContent = "a student";
-    }, 12000);
-    setTimeout(() => {
-        text.textContent = "an explorer";
-    }, 16000);
+    setTimeout(function() {
+        txts[index].classList.add("text-out");
+    }, textOutTimer)
+
+    setTimeout(function() {
+        if (index === txtsLen-1) {
+            index=0;
+        } else {
+            index++;
+        }
+        animateText();
+    }, textInTimer);
 }
 
-textLoad();
-setInterval(textLoad, 20000);
+window.onload=animateText;
