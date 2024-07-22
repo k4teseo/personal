@@ -22,5 +22,6 @@ function animateText() {
         animateText();
     }, textInTimer);
 }
-
 window.onload=animateText;
+
+
