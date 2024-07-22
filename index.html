@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/jtq3edh.css">
 </head>
 <body>
-    <header id="header">
-        <p class="logo"><a href="#header">Kate Seo</a></p>
+    <header>
+        <p class="logo"><a href="#">Kate Seo</a></p>
         <nav>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
             </ul>
         </nav>
         <a class="cta" href="#"><button>Contact</button></a>
@@ -28,7 +28,7 @@
                             <span>&nbsp;Kate Seo</span>
                             <span>&nbsp;A Programmer</span>
                             <span>&nbsp;A Designer</span>
-                            <span>&nbsp;A Learner</span>
+                            <span>&nbsp;A Project Manager</span>
                         </h1>
                     </div>
                 <br>
@@ -40,7 +40,7 @@
         <section id="about">
             <h1 class="title">About Me</h1>
             <div class="about-container">
-                <img src="photo.jpg" alt="headshot">
+                <img src="./src/photo.jpg" alt="headshot">
                 <div id="about-text">
                     <p><strong id="intro"><i>Hi, I'm Kate Seo!</i></strong> I'm a rising junior at Boston University
                         studying <strong>computer science</strong> with a minor in <strong>innovation & entrepreneurship</strong>.
@@ -55,9 +55,9 @@
                         that creates social good through building projects for non-profits. I'm also the <strong>project
                         manager of community</strong> at Spark!, where I work to build relationships and create an
                         inclusive environment for an organization of 200+ students in tech. Outside of school I love to
-                        travel and am studying abroad in London this upcoming semester. I'm always interested in learning
-                        about new places and cultures and am teaching myself Chinese to broaden my skill set. Thank you
-                        for visiting my site!</p>
+                        travel and am studying abroad in London this upcoming semester. I've always been interested in
+                        learning about new places and cultures and am currently teaching myself Chinese to broaden my skill
+                        set. Thank you for visiting my site!</p>
                     </div>
             </div>
             <br>
@@ -66,22 +66,29 @@
             <section id="skills">
                 <h2>My Skills</h2>
                 <div class="grid">
-                    <div class="item1">Programming</div>
-                    <div class="item2">Design</div>
-                    <div class="item3">Leadership</div>
-                    <div class="item4">Product/Project Management</div>
-                    <div class="item5">Communication</div>
-                    <div class="item6">Time Management</div>
+                    <div class="item" id="item1">Web Development</div>
+                    <div class="item" id="item2">Design</div>
+                    <div class="item" id="item3">Languages</div>
+                    <div class="item" id="item4">Leadership</div>
+                    <div class="item" id="item5">Product/Project Management</div>
+                    <div class="item" id="item6">Time Management</div>
                 </div>
             </section>
         </section>
 
         <section id="resume">
             <h1 class="title">Resume</h1>
+            <embed src="./src/resume.pdf" type="">
+        </section>
+
+        <section id="projects">
+            <h1 class="title">Projects</h1>
         </section>
     </main>
     <footer>
-        <p>&#169; 2024 Kate Seo</p>
+        <a href="https://linkedin.com/in/kate-seo" target="_blank"><img src="./src/linkedin.png" alt="linkedin logo" class="icon"></a>
+        <a href="https://github.com/k4teseo" target="_blank"><img src="./src/github.png" alt="github logo" class="icon"></a>
+        <p>&#169; 2024 Kate Seo. All rights reserved.</p>
     </footer>
 <script src="index.js"></script>
 </body>
