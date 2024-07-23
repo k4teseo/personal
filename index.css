@@ -1,3 +1,4 @@
+/* Global styling */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,19 @@ html {
     scroll-behavior: smooth;
 }
 
+main {
+    margin: 0 10vw;
+}
+
+.title{
+    font-size: calc(4px + 4vw);
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
+    animation: slideIn 1s ease;
+    animation-timeline: view();
+}
+
+/* Navigation Bar */
 header {
     display: flex;
     justify-content: flex-end;
@@ -67,10 +81,50 @@ button:hover {
     color: #D2042D;
 }
 
-main {
-    margin: 0 10vw;
+/* Animations */
+@keyframes textIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
+@keyframes textOut {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+}
+
+/* Home Page */
 #home {
     display: flex;
     flex-wrap: wrap;
@@ -132,56 +186,7 @@ main {
     animation: textOut .5s ease;
 }
 
-@keyframes textIn {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes textOut {
-    0% {
-        transform: translateY(0%);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-}
-
-.title{
-    font-size: calc(4px + 4vw);
-    font-family: "rafaella", sans-serif;
-    color: #D2042D;
-    animation: slideIn 1s ease;
-    animation-timeline: view();
-}
-
-@keyframes slideIn {
-    0% {
-        transform: translateX(-10%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
-    }
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-    70% {
-        opacity: 1;
-    }
-}
-
+/* About Page */
 #about {
     margin-bottom: 15%;
 }
@@ -229,7 +234,7 @@ main {
 
 .grid {
     display: grid;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 32vh 32vh;
     grid-template-columns: 25vw 25vw 25vw;
     justify-content: space-around;
 }
@@ -237,17 +242,56 @@ main {
 .item {
     background-color: white;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
-    height: 200px;
+    height: 220px;
 }
 
 .item h3 {
     text-align: center;
+    font-family: Zahrah, serif;
+    margin: 5% 0;
+    font-size: calc(1px + 1.3vw);
+    color: black;
 }
 
+.item ul {
+    margin-left: 10%;
+}
+
+.item li {
+    font-family: Zahrah, serif;
+    font-weight: 450;
+}
+
+.item p {
+    font-family: Zahrah, serif;
+    font-weight: 450;
+    margin: 0 8%;
+    text-align: center;
+}
+
+/* Resume Page */
 #resume {
     margin-bottom: 20%;
 }
 
+embed {
+    height: 100vh;
+    width: 95%;
+}
+
+.resume-container {
+    animation: fade;
+    animation-timeline: view();
+    display: flex;
+    justify-content: center;
+}
+
+/* Projects Page */
+#projects {
+    margin-bottom: 20%;
+}
+
+/* Footer */
 footer {
     background-color: #D2042D;
     padding: 2% 0;
@@ -268,9 +312,4 @@ footer p {
     height: max-content;
     color: white;
     cursor: pointer;
-}
-
-embed {
-    height: 100vh;
-    width: 100%;
 }
