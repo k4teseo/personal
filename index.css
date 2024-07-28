@@ -32,7 +32,7 @@ header {
     z-index: 1;
 }
 
-header p, header li, header a, button {
+header p, header li, header a, header button {
     font-family: "rafaella", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -64,9 +64,9 @@ header p, header li, header a, button {
     color: black;
 }
 
-button {
+header button {
     padding: 4% 20%;
-    background-color: rgba(210, 4, 45, 1);
+    background-color: #D2042D;
     color: white;
     border: none;
     border-radius: 50px;
@@ -76,8 +76,8 @@ button {
     font-size: calc(2px + 1vw);
 }
 
-button:hover {
-    background-color: rgba(255, 255, 255, 1);
+header button:hover {
+    background-color: white;
     color: #D2042D;
 }
 
@@ -234,7 +234,7 @@ button:hover {
 
 .grid {
     display: grid;
-    grid-template-rows: 32vh 32vh;
+    grid-template-rows: 20vw 20vw;
     grid-template-columns: 25vw 25vw 25vw;
     justify-content: space-around;
 }
@@ -242,7 +242,7 @@ button:hover {
 .item {
     background-color: white;
     box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
-    height: 220px;
+    height: 18vw;
 }
 
 .item h3 {
@@ -259,11 +259,14 @@ button:hover {
 
 .item li {
     font-family: Zahrah, serif;
+    font-size: calc(2px + 1vw);
     font-weight: 450;
+    padding: 0.3% 0;
 }
 
 .item p {
     font-family: Zahrah, serif;
+    font-size: calc(2px + 1vw);
     font-weight: 450;
     margin: 0 8%;
     text-align: center;
@@ -276,7 +279,7 @@ button:hover {
 
 embed {
     height: 100vh;
-    width: 95%;
+    width: 95vw;
 }
 
 .resume-container {
