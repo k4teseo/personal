@@ -1,0 +1,82 @@
+/* Global styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: 0 10vw;
+}
+
+.title{
+    font-size: calc(4px + 4vw);
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
+    animation: slideIn 1s ease;
+    animation-timeline: view();
+}
+
+/* Navigation Bar */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5% 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header p, header li, header a, header button {
+    font-family: "rafaella", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: #D2042D;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    font-size: calc(2px + 1vw);
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 1.3vw;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+    font-size: calc(2px + 1vw);
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+header button {
+    padding: 4% 20%;
+    background-color: #D2042D;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 1.3vw;
+    font-size: calc(2px + 1vw);
+}
+
+header button:hover {
+    background-color: white;
+    color: #D2042D;
+}

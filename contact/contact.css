@@ -150,8 +150,9 @@ header button:hover {
     font-size: calc(1px + 1vw);
 }
 
-.contact-left button img {
-    width: 1vw;
+.contact-left button:hover {
+    background-color: white;
+    color: #D2042D;
 }
 
 .contact-right {
@@ -198,7 +199,7 @@ footer p {
 
 .icon {
     display: inline;
-    margin: 0 0.5%;
+    margin: 0 0.3%;
     width: 2%;
     height: max-content;
     color: white;
