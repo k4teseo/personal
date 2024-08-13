@@ -216,7 +216,7 @@ header button:hover {
     color: #D2042D;
 }
 
-@media screen and (max-width: 8000px) {
+@media screen and (max-width: 800px) {
     .about-container {
         flex-direction: column;
         justify-content: center;
