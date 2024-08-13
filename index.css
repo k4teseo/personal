@@ -162,7 +162,6 @@ header button:hover {
 #home .home-text h1 {
     font-weight: 400;
     font-family: "Zahrah", serif;
-
 }
 
 #home .home-text h1 span {
@@ -193,7 +192,7 @@ header button:hover {
 
 #about img {
     width: 30%;
-    height: max-content;
+    height: auto;
 }
 
 .about-container {
@@ -379,7 +378,7 @@ footer p {
     display: inline;
     margin: 0 0.3%;
     width: 2%;
-    height: max-content;
+    height: auto;
     color: white;
     cursor: pointer;
 }
