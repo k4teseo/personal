@@ -304,6 +304,14 @@ embed {
     align-items: center;
 }
 
+.resume-container p {
+    font-family: Zahrah, serif;
+    font-size: calc(1px + 1vw);
+    color: black;
+    margin-top: 3%;
+    font-weight: 600;
+}
+
 /* Projects Page */
 #projects {
     margin-bottom: 20%;
