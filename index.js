@@ -24,11 +24,24 @@ function animateText() {
 }
 window.onload=animateText;
 
-function checkPDF() {
-    let pdf = document.getElementById('resume-pdf');
+function showError() {
     let errorMessage = document.getElementById('error-message');
-    if (pdf.offsetHeight === 0 || pdf.offsetWidth === 0) {
-        errorMessage.style.display = 'block';
-    }
+    errorMessage.style.display = 'block';
 }
-window.onload = checkPDF;
+
+// Event listener to check if the embed fails to load
+window.addEventListener('load', function() {
+    let pdf = document.getElementById('resume-pdf');
+
+    // Check if the PDF is loaded
+    pdf.addEventListener('load', function() {
+        // If the load event is fired, the PDF is loaded correctly
+    }, { once: true });
+
+    // Fallback if the PDF fails to load
+    setTimeout(function() {
+        if (pdf.src && pdf.contentDocument === null) {
+            showError();
+        }
+    }, 1000); // Delay to allow time for PDF to attempt to load
+});
