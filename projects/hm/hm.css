@@ -9,18 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-main {
-    margin: 0 10vw;
-}
-
-.title{
-    font-size: calc(4px + 4vw);
-    font-family: "rafaella", sans-serif;
-    color: #D2042D;
-    animation: slideIn 1s ease;
-    animation-timeline: view();
-}
-
 /* Navigation Bar */
 header {
     display: flex;
@@ -86,19 +74,51 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 10vw;
 }
 
-h1 {
+main h1 {
     font-size: calc(4px + 4vw);
     font-family: "rafaella", sans-serif;
     color: #D2042D;
 }
 
-p {
+main p {
     font-family: "Zahrah", serif;
     font-size: calc(1px + 1.3vw);
     color: black;
     text-align: center;
+}
+
+.project-link {
+    margin: 2% 0;
+    display: inline;
+}
+
+.project-link span {
+    font-family: Rafaella, serif;
+    color: #D2042D;
+    font-size: calc(1px + 1.2vw);
+    font-weight: 700;
+}
+
+.project-link a {
+    font-size: calc(1px + 1.2vw);
+    color: black;
+    font-family: Zahrah, serif;
+}
+
+.creative {
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.creative img {
+    height: 25vw;
+    width: auto;
 }
 
 main button {
