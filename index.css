@@ -216,6 +216,12 @@ header button:hover {
     color: #D2042D;
 }
 
+@media screen and (max-width: 750px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+
 #skills {
     animation: fade;
     animation-timeline: view();
