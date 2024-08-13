@@ -106,6 +106,7 @@ main p {
     font-size: calc(1px + 1.2vw);
     color: black;
     font-family: Zahrah, serif;
+    font-weight: 600;
 }
 
 .creative {

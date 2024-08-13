@@ -302,6 +302,10 @@ embed {
     justify-content: center;
 }
 
+.resume-container p {
+    display: none;
+}
+
 /* Projects Page */
 #projects {
     margin-bottom: 20%;

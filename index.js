@@ -24,4 +24,8 @@ function animateText() {
 }
 window.onload=animateText;
 
-
+let resume = document.getElementById("resume-pdf");
+if (!resume) {
+    document.getElementById("resume-pdf").style.display = "none";
+    document.getElementById("error-message").style.display = "block";
+}
