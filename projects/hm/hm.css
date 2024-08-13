@@ -99,7 +99,7 @@ footer p {
     display: inline;
     margin: 0 0.3%;
     width: 2%;
-    height: max-content;
+    height: auto;
     color: white;
     cursor: pointer;
 }
