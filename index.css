@@ -219,6 +219,12 @@ header button:hover {
 @media screen and (max-width: 750px) {
     .about-container {
         flex-direction: column;
+        justify-content: center;
+    }
+
+    #about img {
+        width: 40%;
+        margin-bottom: 2%;
     }
 }
 
