@@ -299,11 +299,9 @@ embed {
     animation: fade;
     animation-timeline: view();
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.resume-container p {
-    display: none;
+    align-items: center;
 }
 
 /* Projects Page */
