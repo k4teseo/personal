@@ -340,7 +340,6 @@ embed {
     flex-direction: column;
     opacity: 0;
     transition: 0.6s;
-    cursor: pointer;
 }
 
 .overlay:hover {
@@ -371,6 +370,7 @@ embed {
     font-family: Zahrah, serif;
     font-size: calc(1px + 1vw);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 /* Footer */
