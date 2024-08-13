@@ -81,18 +81,45 @@ header button:hover {
     color: #D2042D;
 }
 
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: calc(4px + 4vw);
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
+}
+
+p {
+    font-family: "Zahrah", serif;
+    font-size: calc(1px + 1.3vw);
+    color: black;
+    text-align: center;
+}
+
+iframe {
+    margin: 5% 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 64vw;
+    height: 36vw;
+}
+
 /* Footer */
 footer {
     background-color: #D2042D;
     padding: 2% 0;
     text-align: center;
-    color: white;
-    font-family: Zahrah, serif;
-    font-size: calc(1px + 1vw);
 }
 
 footer p {
     margin-top: 0.5%;
+    color: white;
+    font-family: Zahrah, serif;
+    font-size: calc(1px + 1vw);
 }
 
 .icon {
