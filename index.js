@@ -24,8 +24,11 @@ function animateText() {
 }
 window.onload=animateText;
 
-let resume = document.getElementById("resume-pdf");
-if (!resume) {
-    document.getElementById("resume-pdf").style.display = "none";
-    document.getElementById("error-message").style.display = "block";
+function checkPDF() {
+    let pdf = document.getElementById('resume-pdf');
+    let errorMessage = document.getElementById('error-message');
+    if (pdf.offsetHeight === 0 || pdf.offsetWidth === 0) {
+        errorMessage.style.display = 'block';
+    }
 }
+window.onload = checkPDF;
