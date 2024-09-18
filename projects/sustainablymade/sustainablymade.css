@@ -81,13 +81,18 @@ main h1 {
     font-size: calc(4px + 4vw);
     font-family: "rafaella", sans-serif;
     color: #D2042D;
+    text-align: center;
+}
+
+main h2 {
+    font-family: "rafaella", sans-serif;
+    color: #D2042D;
 }
 
 main p {
     font-family: "Zahrah", serif;
     font-size: calc(1px + 1.3vw);
     color: black;
-    text-align: center;
 }
 
 iframe {
