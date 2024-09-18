@@ -75,6 +75,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
 }
 
 main h1 {
@@ -87,7 +88,6 @@ main h1 {
 .header {
     font-family: "rafaella", sans-serif;
     color: #D2042D;
-    text-align: left;
 }
 
 main p {
