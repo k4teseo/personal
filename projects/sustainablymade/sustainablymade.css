@@ -84,9 +84,10 @@ main h1 {
     text-align: center;
 }
 
-main h2 {
+.header {
     font-family: "rafaella", sans-serif;
     color: #D2042D;
+    text-align: left;
 }
 
 main p {
